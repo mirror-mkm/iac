@@ -1,11 +1,19 @@
 # iac
 pre-requisites
 ---------------
-terraform version : v1.6.6 is used.
+-Terraform pre-installed.
+
+-An access key & secret key created the AWS
+
+
 this iac will create Autoscaling Group , Application Load Balancer , ec2 launch template.
-In this setup ,for the storage of terraform state,the default-backend (local backend, which stores the state file on your local disk) is used.
+
+In this setup, the default backend (local backend), which stores the Terraform state file on your local disk, is used for storing the terraform state.
+
 cd terraform
-export AWS_PROFILE = yourawsprofile
+
 terraform init
+
 terraform plan
+
 terraform apply
