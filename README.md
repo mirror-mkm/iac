@@ -10,6 +10,7 @@ this iac will create Autoscaling Group , Application Load Balancer , ec2 launch 
 
 In this setup, the default backend (local backend), which stores the Terraform state file on your local disk, is used for storing the terraform state.
 
+```
 cd terraform
 
 terraform init
@@ -17,3 +18,4 @@ terraform init
 terraform plan
 
 terraform apply
+```
